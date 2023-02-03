@@ -1,12 +1,22 @@
+import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar'
+import { AuthContextProvider } from './context/AuthContext'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 function App() {
   
   return(
     <div className="w-screen h-screen">
-      <NavBar/>
-      <div className="flex justify-center">
-      </div>
+      {/* <AuthContextProvider> */}
+        <NavBar/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/Signup' element={<Signup/>} />
+          <Route path='/Login' element={<Login/>} />
+        </Routes>
+      {/* </AuthContextProvider> */}
   </div>
   )
 }
