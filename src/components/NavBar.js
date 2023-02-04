@@ -20,7 +20,7 @@ const NavBar = ({ showProfile, profileClickHandler, homeButtonClickHandler }) =>
             <div className="text-xl mx-auto flex flex-row justify-around"> 
 
                 <Link to={user?.email ? '/Assignment' : '/'}>
-                <button className="text-xl mx-auto flex flex-row justify-around transition-opacity ease-in duration-100 opacity-70 hover:opacity-100 flex-col" onClick={ homeButtonClickHandler }>Survery Serving Service</button>
+                <button className="text-xl mx-auto flex flex-row justify-around transition-opacity ease-in duration-100 opacity-70 hover:opacity-100 flex-col" onClick={ homeButtonClickHandler }>Survey Serving Service</button>
                 </Link>
         {user?.email ? (       
             <div>
