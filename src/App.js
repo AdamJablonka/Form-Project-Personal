@@ -10,7 +10,7 @@ import Create from './pages/Create'
 function App() {
   
   return(
-    <div className="w-screen h-screen">
+    <div>
       <AuthContextProvider>
         <NavBar/>
         <Routes>
