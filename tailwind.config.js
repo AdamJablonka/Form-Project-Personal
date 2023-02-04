@@ -9,6 +9,7 @@ module.exports = {
       'custom-dark-gray': '#2c2e31',
       'white': '#dfe2d7',
       'black': '#000000',
+      'custom-blue': '#0948d4',
     },
     extend: {
       animation: {

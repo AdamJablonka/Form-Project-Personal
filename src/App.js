@@ -5,6 +5,7 @@ import Assignment from './pages/Assignment'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Create from './pages/Create'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Signup' element={<Signup/>} />
           <Route path='/Login' element={<Login/>} />
           <Route path='/Assignment' element={<Assignment/>} />
+          <Route path='/Create' element={<Create/>} />
         </Routes>
       </AuthContextProvider>
   </div>
