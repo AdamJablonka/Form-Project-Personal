@@ -1,4 +1,3 @@
-import { BiUserCircle } from "react-icons/bi"
 import { Link, useNavigate } from "react-router-dom"
 import { UserAuth } from "../context/AuthContext";
 
