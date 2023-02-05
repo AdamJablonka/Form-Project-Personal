@@ -8,20 +8,21 @@ const Create = () => {
   const [body, setBody] = useState('')
 
   function handleSubmit(e) {
-    e.preventDefault()
     if (title === '' || body === '') {
       alert("Title or Body can NOT be empty.")
+      e.preventDefault()
       return
     }
     const postsRef = collection(db, "posts"); 
     addDoc(postsRef, {title, body})
       .then(res => {
         console.log("res: ", res.id)
+
       })
       .catch(error => {
           console.log(error.message)
       })
-    alert(title)
+    alert('Thank you! Your survey has been submitted.')
   }
 
   return (
@@ -44,7 +45,7 @@ const Create = () => {
           onChange={ e => setBody(e.target.value)}>
           </textarea>
 
-          <input type="submit" className="text-off-white bg-custom-blue rounded-md m-3 w-2/3 cursor-pointer focus:outline-none ring-2 focus:ring-4 p-1" placeholder="Write your thoughts here..."></input>
+          <input type="submit" className="transition-all text-off-white opacity-90 bg-custom-blue rounded-md m-3 w-2/3 cursor-pointer focus:outline-none focus:ring-2 hover:opacity-100 p-1" placeholder="Write your thoughts here..."></input>
         </form>
       </div>
     </div>

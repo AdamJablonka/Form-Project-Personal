@@ -29,9 +29,9 @@ const Assignment = () => {
         <button id="refresh_button" className="w-36 bg-custom-blue text-white p-1.5 m-1 rounded-md" onClick={() => getPosts()}>Refresh Posts</button>
         <ul>
           {posts.map(post => (
-            <div className='m-2 border border-custom-dark-brown rounded-md text-black flex-row'>
-              <p key={post.id} className='font-medium flex justify-center'>{post.data.title}</p>
-              <p key={post.id} className='font-medium flex justify-center'>{post.data.body}</p>
+            <div className='m-2 border border-medium-gray rounded-md text-black flex-row drop-shadow-lg'>
+              <h3 key={post.id} className='font-bold flex justify-center'>{post.data.title}</h3>
+              <p key={post.id} className='flex justify-center'>{post.data.body}</p>
             </div>
           ))}
         </ul>   

@@ -12,6 +12,9 @@ module.exports = {
       'black': '#000000',
       'custom-blue': '#0948d4',
       'off-white': '#d9e0e8',
+      'blue-gray': '#334155',
+      'medium-gray': '#939799',
+      'light-blue': '#ADD8E6',
     },
     extend: {
       animation: {
